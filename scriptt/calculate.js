@@ -74,6 +74,23 @@ function calcultateRhombusAre() {
 
     const rhombusArea = document.getElementById('Rhombus-area');
     rhombusArea.innerText = rhArea;
-    
 
+
+}
+// pantagon  function =>
+function calculatePentagonArea() {
+    const parseInput = document.getElementById('pentagon-base');
+    const parseText = parseInput.value;
+    const parse = parseFloat(parseText);
+    console.log(parse)
+
+    const baseInput = document.getElementById('pentagon-height');
+    const baseText = baseInput.value;
+    const base = parseFloat(baseText)
+    console.log(base)
+    const pentArea = 0.5 * parse * base;
+
+                       
+    const pentagonArea = document.getElementById('pentagon-area');
+    pentagonArea.innerText = pentArea;
 }
