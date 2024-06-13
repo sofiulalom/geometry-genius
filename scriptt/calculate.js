@@ -55,5 +55,25 @@ function calculateParallelogramArea() {
 
     const parallelogramArea = document.getElementById('Parallelogram-area');
     parallelogramArea.innerText = pArea;
+
+}
+
+// Rhombus function =>
+function calcultateRhombusAre() {
+    const distanseInput = document.getElementById('rhombus-base')
+    const distanseText = distanseInput.value;
+    const distanse = parseFloat(distanseText);
+    console.log(distanse)
+
+    const defarensInput = document.getElementById('rhombus-height');
+    const defaranseText = defarensInput.value;
+    const defaranse = parseFloat(defaranseText);
+    console.log(defaranse)
+
+    const rhArea = 0.5 * distanse * defaranse;
+
+    const rhombusArea = document.getElementById('Rhombus-area');
+    rhombusArea.innerText = rhArea;
     
+
 }
