@@ -17,3 +17,23 @@ function calculateTrianglehandler() {
 
 
 }
+
+// Rectangle funtion =>
+
+function calculateRectangleArea() {
+    const lengthInput = document.getElementById('ractangle-length');
+    const lengthText = lengthInput.value;
+    const length = parseFloat(lengthText)
+  
+
+    const widthInput = document.getElementById('rectangle-width');
+    const widthText = widthInput.value;
+    const width = parseFloat(widthText);
+   
+    // rectangle multyful work
+    const rArea = length * width;
+    
+    // rectangle result
+    const rectangleArea = document.getElementById('rectangle-area');
+    rectangleArea.innerText = rArea;
+}
