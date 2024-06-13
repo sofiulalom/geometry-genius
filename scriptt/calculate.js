@@ -94,3 +94,24 @@ function calculatePentagonArea() {
     const pentagonArea = document.getElementById('pentagon-area');
     pentagonArea.innerText = pentArea;
 }
+
+//  ellipse area
+function calculateEllipseArea() {
+    const addInput = document.getElementById('ellipse-add');
+    const addText = addInput.value;
+    const add = parseFloat(addText);
+    console.log(add)
+
+    const baseInput = document.getElementById('ellipse-base');
+    const baseText = baseInput.value;
+    const base = parseFloat(baseText);
+    console.log(base)
+
+    const Ellipseadd = add * base;
+    const ellipseArea = document.getElementById('ellipse-area');
+    ellipseArea.innerText = Ellipseadd;
+    
+
+   
+
+ }
